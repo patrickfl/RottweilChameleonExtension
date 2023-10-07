@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<structure xmlns="https://cmln.github.io/chameleon/schema/1.0/layout.rng">
+
+	<grid mode="fluid">
+		<row>
+			<cell span="9">
+
+				<row>
+					<cell span="12">
+						<component type="PersonalTools" hideNewtalkNotifier="yes" class="pull-right"/>						
+					</cell>
+				</row>
+
+				<row>
+					<cell span="12">
+						<component type="SearchBar" class="pull-right"/>
+					</cell>
+				</row>
+
+			</cell>
+		</row>
+		<row>
+			<cell span="12">
+				<component type="Logo"></component>
+			</cell>
+		</row>
+		<row>
+			<cell span="3" class="col-md-3">
+				<component type="Aside" flatten="navigation" showTools="no" showLanguages="no"></component>				
+			</cell>
+			<cell span="9" class="col-md-9">
+				<component type="NavigationContent"></component>
+				<component type="SiteNotice"></component>
+				<component type="MainContent"></component>
+			</cell>
+		</row>		
+
+	</grid>
+
+</structure>

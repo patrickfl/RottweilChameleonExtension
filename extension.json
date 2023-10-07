@@ -1,0 +1,30 @@
+{
+	"name": "RottweilChameleonExtension",
+	"author": "Patrick Flaig",
+	"version": "1.0.0",
+	"license-name": "",
+	"type": "other",
+    "MessagesDirs": {
+		"RottweilChameleonExtension": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"Skins\\Chameleon\\Components\\Aside": "src/Components/Aside.php",
+		"Skins\\Chameleon\\Components\\Logo": "src/Components/Logo.php",
+        "Skins\\Chameleon\\Components\\NavigationCenter": "src/Components/NavigationCenter.php",
+        "Skins\\Chameleon\\Components\\NavigationContent": "src/Components/NavigationContent.php",
+        "Skins\\Chameleon\\Components\\NavigationTop": "src/Components/NavigationTop.php",
+        "Skins\\Chameleon\\Components\\Search": "src/Components/Search.php",
+        "Skins\\Chameleon\\Components\\ToggleButton": "src/Components/ToggleButton.php",
+		"RottweilChameleonExtensionHooks": "src/Hooks/Hooks.php"
+	},
+    "ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtensionPath": "RottweilChameleonExtension/resources"
+	},
+	"Hooks": {
+		"SkinSubPageSubtitle": "RottweilChameleonExtensionHooks::onSkinSubPageSubtitle"
+	},
+	"manifest_version": 2
+}
