@@ -42,9 +42,7 @@ class Aside extends Component {
 		];
 
 		$title = $this->getSkin()->getTitle();
-		$user = $this->getSkin()->getUser();
-		$userCanEdit = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager()->userCan( 'edit', $user, $title );
-		if( ( !$title->isSpecialPage() ) && $userCanEdit ){
+		if( ( !$title->isSpecialPage() ) && ( $title->userCan( 'edit' ) ) ){
 			$items[] = [
 				'href' => $title->getEditURL(),
 				'title' => wfMessage( 'rottweil-navigation-main-editor-title' )->plain(),
@@ -169,14 +167,7 @@ class Aside extends Component {
 		foreach ( $subpages as $subpage ) {
 			$wikipage = \WikiPage::factory( $subpage );
 			$parserOptions = $wikipage->makeParserOptions( $this->getSkin()->getContext() );
-			$parserOutput = $wikipage->getParserOutput( $parserOptions );
-
-			$defaultsort = [];
-			if ( method_exists( $parserOutput, 'getPageProperty' ) ) {
-				$defaultsort = $wikipage->getParserOutput( $parserOptions )->getPageProperty( 'defaultsort' );
-			} else {
-				$defaultsort = $wikipage->getParserOutput( $parserOptions )->getProperty( 'defaultsort' );
-			}
+			$defaultsort = $wikipage->getParserOutput( $parserOptions )->getProperty( 'defaultsort' );
 
 			if ( !$defaultsort ){
 				continue;
