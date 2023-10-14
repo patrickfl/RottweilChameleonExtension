@@ -12,7 +12,7 @@
 			"php": ">= 7.4"
 		},
 		"skins": {
-			"Chameleon": ">= 4.2"
+			"chameleon": ">= 4.2"
 		}
 	},
 	"AutoloadClasses": {
