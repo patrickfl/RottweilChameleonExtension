@@ -1,10 +1,10 @@
 {
-	"name": "RottweilChameleonExtension",
+	"name": "rottweil-skin-name",
 	"author": "Patrick Flaig",
 	"version": "1.1.0",
 	"url": "https://github.com/patrickfl/RottweilChameleonExtension",
 	"license-name": "GPL-3.0-or-later",
-	"descriptionmsg": "ChameleonSkin Extension for Rottweiler Bilder",
+	"descriptionmsg": "rottweil-skin-desc",
 	"type": "other",
 	"requires": {
 		"MediaWiki": ">= 1.39.0",
