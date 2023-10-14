@@ -17,7 +17,7 @@ class Logo extends Component {
 		$html .= \Html::openElement(
 				'img',
 				array(
-					'src' => $wgScriptPath . "/extensions/RottweilChameleonExtension/resources/images/titelleiste.jpg"
+					'src' => $wgScriptPath . "/extensions/RottweilChameleonExtension/images/titelleiste.jpg"
 				)
 			);
 		$html .= \Html::closeElement( 'img' );
