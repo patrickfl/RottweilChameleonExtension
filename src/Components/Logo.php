@@ -4,7 +4,7 @@ namespace Skins\Chameleon\Components;
 class Logo extends Component {
 
 	public function getHtml(){
-		global $wgScriptPath;
+		global $wgExtensionAssetsPath;
 
 		$html = \Html::openElement(
 				'a',
@@ -17,7 +17,7 @@ class Logo extends Component {
 		$html .= \Html::openElement(
 				'img',
 				array(
-					'src' => $wgScriptPath . "/extensions/RottweilChameleonExtension/images/titelleiste.jpg"
+					'src' => $wgExtensionAssetsPath . "/RottweilChameleonExtension/images/titelleiste.jpg"
 				)
 			);
 		$html .= \Html::closeElement( 'img' );
