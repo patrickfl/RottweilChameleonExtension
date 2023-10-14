@@ -1,13 +1,19 @@
 {
 	"name": "RottweilChameleonExtension",
 	"author": "Patrick Flaig",
-	"version": "1.0.1",
-	"license-name": "",
+	"version": "1.1.0",
+	"url": "https://github.com/patrickfl/RottweilChameleonExtension",
+	"license-name": "GPL-3.0-or-later",
+	"descriptionmsg": "rottweil-skin-desc",
 	"type": "other",
-    "MessagesDirs": {
-		"RottweilChameleonExtension": [
-			"i18n"
-		]
+	"requires": {
+		"MediaWiki": ">= 1.39.0",
+		"platform": {
+			"php": ">= 7.4"
+		},
+		"skins": {
+			"chameleon": ">= 4.2"
+		}
 	},
 	"AutoloadClasses": {
 		"Skins\\Chameleon\\Components\\Aside": "src/Components/Aside.php",
@@ -19,9 +25,21 @@
         "Skins\\Chameleon\\Components\\ToggleButton": "src/Components/ToggleButton.php",
 		"RottweilChameleonExtensionHooks": "src/Hooks/Hooks.php"
 	},
+	"MessagesDirs": {
+		"RottweilChameleonExtension": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.rottweilchameleon": {
+			"styles": [
+				"styles/RottweilSkin.scss"
+			]
+		}
+	},
     "ResourceFileModulePaths": {
-		"localBasePath": "resources",
-		"remoteExtensionPath": "RottweilChameleonExtension/resources"
+		"localBasePath": "",
+		"remoteExtensionPath": "RottweilChameleonExtension"
 	},
 	"Hooks": {
 		"SkinSubPageSubtitle": "RottweilChameleonExtensionHooks::onSkinSubPageSubtitle"

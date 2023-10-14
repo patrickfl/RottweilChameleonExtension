@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Daniel Vogel"
+			"Patrick Flaig"
 		]
 	},
-	"rottweil-skin-desc": "rottweil.net Skin für Mediawiki 1.35+",
-	"rottweil-skin-name": "Rottweil Skin",
+	"rottweil-skin-desc": "ChameleonSkin Extension für Rottweiler Bilder",
+	"rottweil-skin-name": "RottweilChameleonExtension",
 	"rottweil-navigation-main": "Hauptnavigation:",
 	"rottweil-navigation-subpages": "Unterseiten:",
 	"rottweil-navigation-external": "Externe Links:",
