@@ -7,6 +7,5 @@ wfLoadSkin( 'chameleon' );
 $wgDefaultSkin="chameleon";
 
 $egChameleonLayoutFile= __DIR__ . '/extensions/RottweilChameleonExtension/layouts/rottweil-default.xml';
-$egChameleonThemeFile = __DIR__ . '/extensions/RottweilChameleonExtension/resources/styles/RottweilSkin.scss';
-$egChameleonExternalStyleModules = [__DIR__ . '/extensions/RottweilChameleonExtension/resources/styles/RottweilSkin.scss' => 'afterMain'];
+$egChameleonThemeFile = __DIR__ . '/extensions/RottweilChameleonExtension/styles/RottweilSkin.scss';
 ```
