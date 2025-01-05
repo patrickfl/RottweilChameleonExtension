@@ -167,7 +167,7 @@ class Aside extends Component {
 		 * @var \Title $subpage
 		 */
 		foreach ( $subpages as $subpage ) {
-			$wikipage = \WikiPage::factory( $subpage );
+			$wikipage = \MediaWiki\MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $subpage );
 			$parserOptions = $wikipage->makeParserOptions( $this->getSkin()->getContext() );
 			$parserOutput = $wikipage->getParserOutput( $parserOptions );
 
@@ -359,7 +359,8 @@ class Aside extends Component {
 
 	private function getRootPages() {
 		$rootpages = [];
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbProvider = \MediaWiki\MediaWikiServices::getInstance()->getConnectionProvider();
+		$dbr = $dbProvider->getReplicaDatabase();
 		$pageTable =$dbr->tableName( 'page' );
 
 		$res = $dbr->query( "SELECT * FROM $pageTable WHERE page_namespace = 0 AND page_title NOT LIKE '%/%'" );
