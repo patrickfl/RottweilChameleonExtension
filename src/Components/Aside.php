@@ -129,11 +129,11 @@ class Aside extends Component {
 		if( $this->getSkin()->getTitle()->isMainPage() ) {
 			return '';
 		}
-
+		/* The old Guestbook is no longer available, don't generate the Link
 		$html = '<li><span class="nav-heading">' . wfMessage( 'rottweil-navigation-interactive' ) . '</span></li>';
 
 		$html .= '<li><a href="http://www.guestbook-free.com/books3/nlh/"><span class="rw-icon rw-icon-star"></span><span class="rw-text">' . wfMessage( 'rottweil-navigation-guestbook' ) . '</span></a></li>';
-
+		*/
 		return $html;
 	}
 
@@ -300,8 +300,9 @@ class Aside extends Component {
 
 		$html .= '<li><a href="#news"><span class="rw-icon rw-icon-star"></span><span class="rw-text">' . wfMessage( 'rottweil-navigation-new-pages' ) . '</span></a></li>';
 		$html .= '<li><a href="#newcomments"><span class="rw-icon rw-icon-star"></span><span class="rw-text">' . wfMessage( 'rottweil-navigation-new-comments' ) . '</span></a></li>';
+		/* The old Guestbook is no longer available, don't generate the Link
 		$html .= '<li><a href="http://www.guestbook-free.com/books3/nlh/"><span class="rw-icon rw-icon-star"></span><span class="rw-text">' . wfMessage( 'rottweil-navigation-guestbook' ) . '</span></a></li>';
-
+		*/
 		return $html;
 	}
 
