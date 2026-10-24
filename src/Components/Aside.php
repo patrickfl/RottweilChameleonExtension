@@ -133,8 +133,10 @@ class Aside extends Component {
 		$html = '<li><span class="nav-heading">' . wfMessage( 'rottweil-navigation-interactive' ) . '</span></li>';
 
 		$html .= '<li><a href="http://www.guestbook-free.com/books3/nlh/"><span class="rw-icon rw-icon-star"></span><span class="rw-text">' . wfMessage( 'rottweil-navigation-guestbook' ) . '</span></a></li>';
-		*/
+		
 		return $html;
+		*/
+		return '';
 	}
 
 	protected function makeSectionSubpages() {
