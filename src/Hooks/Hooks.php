@@ -22,8 +22,9 @@ class RottweilChameleonExtensionHooks
 
         $linkList = [];
         $linkRenderer = \MediaWiki\MediaWikiServices::getInstance()->getLinkRenderer();
+        $wikiPageFactory = \MediaWiki\MediaWikiServices::getInstance()->getWikiPageFactory();
         foreach( $ancestorTitles as $title ) {
-            $wikipage = \WikiPage::factory( $title );
+            $wikipage = $wikiPageFactory->newFromTitle( $title );
             $parserOptions = $wikipage->makeParserOptions( $skin->getContext() );
             $parserOutput = $wikipage->getParserOutput( $parserOptions );
             $displayName = '';
