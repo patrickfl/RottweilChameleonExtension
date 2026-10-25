@@ -7,13 +7,13 @@
 
 				<row>
 					<cell span="12">
-						<component type="PersonalTools" hideNewtalkNotifier="yes" class="pull-right"/>						
+						<component type="PersonalTools" hideNewtalkNotifier="yes" class="float-end"/>						
 					</cell>
 				</row>
 
 				<row>
 					<cell span="12">
-						<component type="SearchBar" class="pull-right"/>
+						<component type="SearchBar" class="float-end"/>
 					</cell>
 				</row>
 
