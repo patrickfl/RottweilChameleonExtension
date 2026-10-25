@@ -4,15 +4,10 @@
     "type": "mediawiki-extension",
     "license": "GPL-3.0-or-later",
     "require": {
-        "php": ">= 8.3"
+        "php": ">=8.3",
+        "mediawiki/chameleon-skin": ">=5.0"
     },
-    "autoload": {
-        "psr-4": {
-            "Skins\\Chameleon\\Components\\": "src/Components/",
-            "RottweilChameleonExtension\\": "src/"
-        },
-        "classmap": [
-            "src/Hooks/Hooks.php"
-        ]
+    "extra": {
+        "installer-name": "RottweilChameleonExtension"
     }
 }
