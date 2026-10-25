@@ -1,0 +1,13 @@
+{
+    "name": "patrickfl/rottweil-chameleon-extension",
+    "description": "Rottweil Chameleon Extension for MediaWiki",
+    "type": "mediawiki-extension",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": ">=8.3",
+        "mediawiki/chameleon-skin": ">=5.0"
+    },
+    "extra": {
+        "installer-name": "RottweilChameleonExtension"
+    }
+}
