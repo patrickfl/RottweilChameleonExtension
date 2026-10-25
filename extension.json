@@ -1,7 +1,7 @@
 {
 	"name": "RottweilChameleonExtension",
 	"author": "Patrick Flaig",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"url": "https://github.com/patrickfl/RottweilChameleonExtension",
 	"license-name": "GPL-3.0-or-later",
 	"descriptionmsg": "rottweil-skin-desc",
@@ -12,7 +12,7 @@
 			"php": ">= 8.3"
 		},
 		"skins": {
-			"chameleon": ">= 5.0"
+			"chameleon": ">= 6.0"
 		}
 	},
 	"AutoloadClasses": {
