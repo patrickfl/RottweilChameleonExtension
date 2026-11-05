@@ -22,17 +22,34 @@ body.mediawiki.skin-chameleon.layout-rottweil-default {
         padding: 0;
 
         .rw-banner {
-            display: block;
-            margin: 0 0 1rem;
+            display: flex;
+            align-items: center;
+            min-height: 4.2rem;
+            margin: 0;
             border-radius: 0.45rem;
             overflow: hidden;
-            border: 1px solid var(--rw-border);
-            background: var(--rw-surface);
+            border: 1px solid rgba(138, 93, 29, 0.18);
+            background: linear-gradient(90deg, #d8b26d 0%, #c88d2e 100%);
+            box-shadow: none;
+            text-decoration: none;
+            padding: 0 1.25rem;
+            width: 100%;
 
-            img {
+            .rw-brandbar-text {
                 display: block;
-                width: 100%;
-                height: auto;
+                color: #201b17;
+                font-size: clamp(1rem, 2vw, 1.8rem);
+                font-weight: 700;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                line-height: 1.1;
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+            }
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                filter: brightness(0.98);
             }
         }
 
@@ -40,17 +57,24 @@ body.mediawiki.skin-chameleon.layout-rottweil-default {
             float: none !important;
             display: flex;
             justify-content: flex-end;
+            align-items: center;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin: 0 0 1rem;
+            margin: 0;
+            width: 100%;
+            height: 100%;
         }
 
         form.float-end {
             align-items: center;
             gap: 0.75rem;
+            justify-content: flex-end;
+            min-height: 4.2rem;
 
             .rw-search-input {
-                min-width: 220px;
+                min-width: 0;
+                width: 100%;
+                max-width: 210px;
                 padding: 0.65rem 0.8rem;
                 border: 1px solid var(--rw-border);
                 border-radius: 999px;

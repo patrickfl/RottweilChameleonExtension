@@ -4,24 +4,18 @@ namespace Skins\Chameleon\Components;
 class Logo extends Component {
 
 	public function getHtml(){
-		global $wgExtensionAssetsPath;
+		$href = $this->getSkin()->getConfig()->get( 'Server' ) . $this->getSkin()->getConfig()->get( 'ScriptPath' );
 
 		$html = \Html::openElement(
 				'a',
 				array(
-					'href' => $this->getSkin()->getConfig()->get( 'Server' ) . $this->getSkin()->getConfig()->get( 'ScriptPath' ),
-					'class' => 'rw-banner'
+					'href' => $href,
+					'class' => 'rw-banner rw-brandbar',
+					'title' => 'Rottweiler Bilder'
 				)
 			);
 
-		$html .= \Html::openElement(
-				'img',
-				array(
-					'src' => $wgExtensionAssetsPath . "/RottweilChameleonExtension/images/titelleiste.jpg"
-				)
-			);
-		$html .= \Html::closeElement( 'img' );
-
+		$html .= '<span class="rw-brandbar-text">Rottweiler Bilder</span>';
 		$html .= \Html::closeElement( 'a' );
 
 		return $html;
