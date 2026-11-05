@@ -1,17 +1,17 @@
 body.mediawiki.skin-chameleon.layout-rottweil-default {
-    --rw-bg: #f5f3ef;
-    --rw-surface: #ffffff;
-    --rw-surface-alt: #f8f3ea;
-    --rw-panel: #efe7d8;
-    --rw-panel-strong: #e2d5b8;
-    --rw-accent: #c9821b;
-    --rw-accent-strong: #a7640f;
-    --rw-border: rgba(15, 23, 42, 0.12);
-    --rw-text: #1f2937;
-    --rw-muted: #475569;
-    --rw-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+    --rw-bg: #f6f3ee;
+    --rw-surface: #fffdfb;
+    --rw-surface-alt: #f3efe8;
+    --rw-panel: #efe5d4;
+    --rw-panel-strong: #e4d5b8;
+    --rw-accent: #b78538;
+    --rw-accent-strong: #8a5d1d;
+    --rw-border: rgba(62, 44, 24, 0.12);
+    --rw-text: #1d1d1b;
+    --rw-muted: #5f5a52;
+    --rw-shadow: 0 8px 20px rgba(52, 40, 25, 0.06);
 
-    background: linear-gradient(180deg, #fdfbf8 0%, var(--rw-bg) 100%);
+    background: #f7f4ef;
     color: var(--rw-text);
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
@@ -23,10 +23,11 @@ body.mediawiki.skin-chameleon.layout-rottweil-default {
 
         .rw-banner {
             display: block;
-            margin: 0 0 1.25rem;
-            border-radius: 1rem;
+            margin: 0 0 1rem;
+            border-radius: 0.45rem;
             overflow: hidden;
-            box-shadow: var(--rw-shadow);
+            border: 1px solid var(--rw-border);
+            background: var(--rw-surface);
 
             img {
                 display: block;
@@ -60,10 +61,10 @@ body.mediawiki.skin-chameleon.layout-rottweil-default {
 
             .rw-search-button {
                 padding: 0.65rem 1rem;
-                border: 1px solid transparent;
+                border: 1px solid rgba(138, 93, 29, 0.2);
                 border-radius: 999px;
-                background: linear-gradient(180deg, var(--rw-accent) 0%, var(--rw-accent-strong) 100%);
-                color: white;
+                background: #f1e4ca;
+                color: var(--rw-text);
                 font-weight: 600;
                 cursor: pointer;
             }
@@ -93,22 +94,21 @@ body.mediawiki.skin-chameleon.layout-rottweil-default {
                     .rw-navigation-center-link {
                         display: block;
                         padding: 0.7rem 1rem;
-                        border: 1px solid rgba(168, 100, 15, 0.2);
-                        border-radius: 0.75rem;
-                        background: linear-gradient(180deg, #ffd57b 0%, var(--rw-accent) 100%);
-                        color: #1f2937;
+                        border: 1px solid rgba(138, 93, 29, 0.18);
+                        border-radius: 0.4rem;
+                        background: #f4ebdc;
+                        color: var(--rw-text);
                         text-align: center;
                         text-decoration: none;
                         font-weight: 600;
-                        transition: transform 0.2s ease, box-shadow 0.2s ease;
-                        box-shadow: 0 5px 16px rgba(201, 130, 27, 0.18);
+                        transition: background-color 0.2s ease, border-color 0.2s ease;
 
                         &:hover,
                         &:focus {
                             text-decoration: none;
-                            color: #1f2937;
-                            transform: translateY(-1px);
-                            box-shadow: 0 8px 18px rgba(201, 130, 27, 0.22);
+                            color: var(--rw-text);
+                            background: #ebdfc9;
+                            border-color: rgba(138, 93, 29, 0.3);
                         }
                     }
                 }
@@ -125,9 +125,8 @@ body.mediawiki.skin-chameleon.layout-rottweil-default {
             list-style: none;
             background: var(--rw-surface);
             border: 1px solid var(--rw-border);
-            border-radius: 1rem;
+            border-radius: 0.4rem;
             overflow: hidden;
-            box-shadow: var(--rw-shadow);
 
             li {
                 border-bottom: 1px solid var(--rw-border);
@@ -139,12 +138,12 @@ body.mediawiki.skin-chameleon.layout-rottweil-default {
                 .nav-heading {
                     display: flex;
                     align-items: center;
-                    min-height: 2.75rem;
-                    padding: 0.75rem 1rem;
-                    background: linear-gradient(180deg, var(--rw-panel) 0%, var(--rw-panel-strong) 100%);
-                    font-size: 0.75rem;
+                    min-height: 2.5rem;
+                    padding: 0.7rem 0.9rem;
+                    background: var(--rw-panel);
+                    font-size: 0.73rem;
                     font-weight: 700;
-                    letter-spacing: 0.03em;
+                    letter-spacing: 0.04em;
                     text-transform: uppercase;
                     color: var(--rw-text);
                 }
@@ -153,18 +152,17 @@ body.mediawiki.skin-chameleon.layout-rottweil-default {
                     display: flex;
                     align-items: center;
                     gap: 0.75rem;
-                    padding: 0.8rem 1rem;
+                    padding: 0.75rem 0.9rem;
                     color: var(--rw-text);
                     font-size: 0.9rem;
                     line-height: 1.4;
                     text-decoration: none;
-                    transition: background-color 0.2s ease, transform 0.2s ease;
+                    transition: background-color 0.2s ease;
 
                     &:hover,
                     &:focus {
-                        background: rgba(201, 130, 27, 0.08);
+                        background: rgba(184, 133, 56, 0.06);
                         text-decoration: none;
-                        transform: translateX(2px);
                     }
 
                     .rw-icon {
@@ -253,12 +251,11 @@ body.mediawiki.skin-chameleon.layout-rottweil-default {
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
-        margin: 0 0 1.25rem;
-        padding: 0.85rem 1rem;
-        background: rgba(255, 255, 255, 0.8);
+        margin: 0 0 1rem;
+        padding: 0.7rem 0.9rem;
+        background: rgba(255, 255, 255, 0.5);
         border: 1px solid var(--rw-border);
-        border-radius: 0.9rem;
-        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+        border-radius: 0.4rem;
 
         ul {
             display: flex;
@@ -289,11 +286,11 @@ body.mediawiki.skin-chameleon.layout-rottweil-default {
     }
 
     #content {
-        padding: 1.5rem;
+        padding: 1.2rem 1.3rem;
         border: 1px solid var(--rw-border);
-        border-radius: 1rem;
+        border-radius: 0.45rem;
         background: var(--rw-surface);
-        box-shadow: var(--rw-shadow);
+        box-shadow: none;
     }
 
     h1,
