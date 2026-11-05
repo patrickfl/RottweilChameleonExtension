@@ -25,10 +25,10 @@
 			</cell>
 		</row>
 		<row>
-			<cell span="3" class="col-md-3">
+			<cell span="12" class="col-lg-3 col-md-12">
 				<component type="Aside" flatten="navigation" showTools="no" showLanguages="no"></component>				
 			</cell>
-			<cell span="9" class="col-md-9">
+			<cell span="12" class="col-lg-9 col-md-12">
 				<component type="NavigationContent"></component>
 				<component type="SiteNotice"></component>
 				<component type="MainContent"></component>
