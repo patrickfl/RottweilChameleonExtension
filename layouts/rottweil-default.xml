@@ -7,11 +7,11 @@
 				<component type="PersonalTools" hideNewtalkNotifier="yes" class="float-end"/>
 			</cell>
 		</row>
-		<row>
+		<row class="rw-header-row">
 			<cell span="8" class="rw-logo-cell">
 				<component type="Logo"></component>
 			</cell>
-			<cell span="4">
+			<cell span="4" class="rw-search-cell">
 				<component type="SearchBar" class="float-end"/>
 			</cell>
 		</row>
