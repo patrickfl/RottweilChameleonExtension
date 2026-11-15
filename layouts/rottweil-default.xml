@@ -9,7 +9,7 @@
 		</row>
 		<row class="rw-header-row">
 			<cell span="8" class="rw-logo-cell">
-				<component type="Logo"></component>
+				<component type="Logo"/>
 			</cell>
 			<cell span="4" class="rw-search-cell">
 				<component type="SearchBar" class="float-end"/>
@@ -17,12 +17,12 @@
 		</row>
 		<row>
 			<cell span="12" class="col-lg-3 col-md-12">
-				<component type="Aside" flatten="navigation" showTools="no" showLanguages="no"></component>
+				<component type="Aside" flatten="navigation" showTools="no" showLanguages="no"/>
 			</cell>
 			<cell span="12" class="col-lg-9 col-md-12">
-				<component type="NavigationContent"></component>
-				<component type="SiteNotice"></component>
-				<component type="MainContent"></component>
+				<component type="NavigationContent"/>
+				<component type="SiteNotice"/>
+				<component type="MainContent"/>
 			</cell>
 		</row>
 
