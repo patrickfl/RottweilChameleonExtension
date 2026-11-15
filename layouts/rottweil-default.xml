@@ -8,10 +8,10 @@
 			</cell>
 		</row>
 		<row>
-			<cell span="9">
+			<cell span="8" class="rw-logo-cell">
 				<component type="Logo"></component>
 			</cell>
-			<cell span="3">
+			<cell span="4">
 				<component type="SearchBar" class="float-end"/>
 			</cell>
 		</row>
